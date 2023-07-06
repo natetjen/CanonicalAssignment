@@ -1,0 +1,64 @@
+@import "vanilla-framework";
+@include vanilla;
+
+
+.cards-container{
+  display:flex;
+  padding-top: 16px;
+}
+
+.p-card{
+  // display:flex;
+  border-top:3px solid rgb(145, 76, 182);
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+// .p-card{
+//   background-color: whitesmoke;
+// }
+
+.p-card__text.authorDate {
+  font-style: italic;
+}
+
+// .row{
+//   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+// }
+
+.border{
+  border-top:2px dotted rgb(168, 167, 167);
+  border-bottom:2px dotted rgb(168, 167, 167);
+  padding-top:10px;
+}
+
+.p-card__content-container{
+  margin-top:15px;
+}
+#p{
+  color:black
+}
+
+.p-modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-modal__footer {
+  padding-top: 1rem;
+    /* text-align: right; */
+    display: flex;
+    position: sticky;
+    z-index: 10;
+    /* justify-content: space-between; */
+    background: white;
+    bottom: -16px;
+}
